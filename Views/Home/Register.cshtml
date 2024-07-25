@@ -1,0 +1,59 @@
+﻿@model RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card p-4" style="width: 20rem;">
+        <h2 class="text-center">Register</h2>
+        <form asp-action="Register" method="post">
+            <div class="form-group">
+                <label asp-for="Name">Name</label>
+                <input type="text" class="form-control" id="register-name" asp-for="Name">
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email">Email</label>
+                <input type="email" class="form-control" id="register-email" asp-for="Email">
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password">Password</label>
+                <input type="password" class="form-control" id="register-password" asp-for="Password">
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConfirmPassword">Confirm Password</label>
+                <input type="password" class="form-control" id="register-confirm-password" asp-for="ConfirmPassword">
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+
+            @if (Model.Id == 0)
+            {
+                <button type="submit" class="btn btn-success btn-block">Register</button>
+            }
+
+            @if (Model.Id != 0)
+            {
+                <h2 class="text-success">Register Success Fully! UserId: <div>@Model.Id</div></h2>
+            }
+
+        </form>
+        <p class="text-center mt-3">
+            Already have an account? <a href="/Home/Login">Login</a>
+        </p>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+
+
+

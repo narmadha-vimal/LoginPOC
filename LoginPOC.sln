@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginPOC", "LoginPOC.csproj", "{D760BF2E-88C0-4008-9CA7-CDED4ABB44F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginPOC.Data", "..\LoginPOC.Data\LoginPOC.Data.csproj", "{728A66BC-7323-43CC-B490-ED7D7F9FEAFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D760BF2E-88C0-4008-9CA7-CDED4ABB44F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D760BF2E-88C0-4008-9CA7-CDED4ABB44F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D760BF2E-88C0-4008-9CA7-CDED4ABB44F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D760BF2E-88C0-4008-9CA7-CDED4ABB44F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{728A66BC-7323-43CC-B490-ED7D7F9FEAFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{728A66BC-7323-43CC-B490-ED7D7F9FEAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{728A66BC-7323-43CC-B490-ED7D7F9FEAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{728A66BC-7323-43CC-B490-ED7D7F9FEAFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72C6CCEB-9F05-4787-8464-91ED8B3742BC}
+	EndGlobalSection
+EndGlobal
